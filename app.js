@@ -1,4 +1,5 @@
-let playersChoice
+let playersChoice = document.getElementById("buttons");
+
 
 
 
@@ -11,7 +12,7 @@ else if (compChoice <= .67) {
 } else {
     compChoice = "scissors"
 }
-
+document.write(`Computer picked ${compChoice}`);
 let compare = function play(choice1, choice2) {
     if (choice1 === "rock") {
         if (choice2 === "scissors") {
@@ -34,3 +35,6 @@ let compare = function play(choice1, choice2) {
     }
 };
 var results = compare(userChoice,compChoice);
+
+document.write(results);
+document.write(userChoice,computerChoice);
