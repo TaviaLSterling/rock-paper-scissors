@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container main">
-    
-            <div class="card-group main">
-                <div class="card">
-                    <img class="card-img-top" src="/assets/rock paper scissors (2).jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <button onclick="play('rock')">Rock</button>
-                        </h5>
-                    </div>
+
+        <div class="main">
+            <div>
+                <img class="medium-img" src="/assets/rock paper scissors (2).jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <button onclick="play('rock')">Rock</button>
+
                 </div>
-               
-                    <div class="card">
-                        <img class="card-img-top" src="/assets/rock paper scissors (4).jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <button onclick="play('paper')">Paper</button>
-                            </h5>
-                        </div>
-                    </div>
-                   
-                        <div class="card">
-                            <img class="card-img-top" src="/assets/rock paper scissors (3).jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <button onclick="play('scissors')">Scissors</button>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+
+            <div>
+                <img class="medium-img" src="/assets/rock paper scissors (4).jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <button onclick="play('paper')">Paper</button>
+
                 </div>
-                <script src="/app.js"></script>
+            </div>
+
+            <div>
+                <img class="medium-img" src="/assets/rock paper scissors (3).jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <button onclick="play('scissors')">Scissors</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/app.js"></script>
 </body>
 
 </html>

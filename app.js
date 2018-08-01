@@ -1,3 +1,6 @@
+let playersChoice
+
+
 
 let compChoice = Math.random();
 if (compChoice < .34) {
@@ -9,7 +12,7 @@ else if (compChoice <= .67) {
     compChoice = "scissors"
 }
 
-var compare = function play(choice1, choice2) {
+let compare = function play(choice1, choice2) {
     if (choice1 === "rock") {
         if (choice2 === "scissors") {
             return "Rock Wins!";
@@ -30,4 +33,4 @@ var compare = function play(choice1, choice2) {
         }
     }
 };
-compare(userChoice,compChoice);
+var results = compare(userChoice,compChoice);
