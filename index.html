@@ -17,15 +17,23 @@
 
         <div class="main">
             <div>
+                    <script>document.write("You choose: ", playerChoice); </script><br> 
+                    <script>document.write("The computer chooses: ", compChoice);</script><br>
+                    <script>document.write(compare(playerChoice,compChoice));</script><br>
+
+
+
+
+
+
                 <img class="medium-img" src="/assets/rock paper scissors (2).jpg" alt="Card image cap">
                 <div class="card-body">
-                    <button onclick="play('rock')">Rock</button>
-                </div>
-            </div>
+                <button id="buttons" onclick="play(playersChoice('rock'))">Rock</button><br>
+            </div></div>
             <div>
                 <img class="medium-img" src="/assets/rock paper scissors (4).jpg" alt="Card image cap">
                 <div class="card-body">
-                    <button onclick="play('paper')">Paper</button>
+                    <button id="buttons" onclick="play('paper')">Paper</button>
                 </div>
             </div>
 
@@ -33,7 +41,7 @@
                 <img class="medium-img" src="/assets/rock paper scissors (3).jpg" alt="Card image cap">
                 <div class="card-body">
 
-                    <button onclick="play('scissors')">Scissors</button>
+                    <button id="buttons" onclick="play('scissors')">Scissors</button>
 
                 </div>
             </div>
