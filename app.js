@@ -11,7 +11,7 @@ else if (compChoice <= .67) {
 }
 console.log("Computer: " + compChoice);
 
-let compare = function play(choice1, choice2) {
+function play(choice1, choice2) {
     if (choice1 === "rock") {
         if (choice2 === "scissors") {
             return "Rock Wins!";
@@ -32,10 +32,6 @@ let compare = function play(choice1, choice2) {
         }
     }
 };
-let playersChoice = {
-document.getElementById('rock').onclick = play();
-document.getElementById('paper').onclick = play;
-document.getElementById('scissors').onclick = play;}
-var results = compare(playersChoice,compChoice);
+
 
 
