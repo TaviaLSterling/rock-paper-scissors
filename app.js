@@ -1,5 +1,6 @@
 
 
+
 let compChoice = Math.random();
 if (compChoice < .34) {
     compChoice = "rock";
@@ -9,9 +10,10 @@ else if (compChoice <= .67) {
 } else {
     compChoice = "scissors"
 }
-console.log("Computer: " + compChoice);
+//let playersChoice = document.getElementById("button").textContent;
 
 function play(choice1, choice2) {
+   
     if (choice1 === "rock") {
         if (choice2 === "scissors") {
             return "Rock Wins!";
@@ -32,6 +34,13 @@ function play(choice1, choice2) {
         }
     }
 };
+document.write("Computer: " + compChoice);
 
 
+document.write("You picked:" + playersChoice);
 
+
+function play() {
+    let playerChoice = document.getElementById("button1").innerHTML;
+    document.getElementById("rock").innerHTML = playerChoice;
+}
