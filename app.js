@@ -1,6 +1,5 @@
 
 
-
 let compChoice = Math.random();
 if (compChoice < .34) {
     compChoice = "rock";
@@ -10,7 +9,7 @@ else if (compChoice <= .67) {
 } else {
     compChoice = "scissors"
 }
-//let playersChoice = document.getElementById("button").textContent;
+//document.getElementById("button1").innerText = "button1";
 
 function play(choice1, choice2) {
    
